@@ -43,15 +43,36 @@
 
 // GET ELEMENT BY TAG NAME
 
-var li = document.getElementsByTagName("li");
-console.log(li);
-console.log(li[2]);
-li[2].style.fontWeight = "bold";
+// var li = document.getElementsByTagName("li");
+// console.log(li);
+// console.log(li[2]);
+// li[2].style.fontWeight = "bold";
 
-// changing one item background color
-li[3].style.backgroundColor = "skyblue";
+// // changing one item background color
+// li[3].style.backgroundColor = "skyblue";
 
-// changing all the items bckground color
-for (var i = 0; i < li.length; i++) {
-  li[i].style.backgroundColor = "skyblue";
-}
+// // changing all the items bckground color
+// for (var i = 0; i < li.length; i++) {
+//   li[i].style.backgroundColor = "skyblue";
+// }
+
+// QUERY SELECTORS
+
+var header = document.querySelector("#main-header");
+header.style.borderBottom = "solid 4px #000";
+
+var input = document.querySelector("input");
+input.value = "Hello";
+
+var submit = document.querySelector('input[type="submit"]');
+submit.value = "Send";
+
+var item = document.querySelector(".list-group-item");
+item.style.color = "red";
+
+var lastItem = document.querySelector(".list-group-item:last-child");
+lastItem.style.color = "blue";
+
+var secondItem = document.querySelector(".list-group-item:nth-child(2)");
+secondItem.style.color = "green";
+
