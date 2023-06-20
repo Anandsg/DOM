@@ -28,15 +28,30 @@
 
 // GET ELEMENT BY CLASS NAME
 
-var Items = document.getElementsByClassName("list-group-item");
-console.log(Items);
-console.log(Items[2]);
-Items[2].style.fontWeight = "bold";
+// var Items = document.getElementsByClassName("list-group-item");
+// console.log(Items);
+// console.log(Items[2]);
+// Items[2].style.fontWeight = "bold";
 
 // changing one item background color
-Items[3].style.backgroundColor = "skyblue";
+// Items[3].style.backgroundColor = "skyblue";
 
 // changing all the items bckground color
-for(var i=0;i<Items.length;i++){
-    Items[i].style.backgroundColor = 'skyblue';
+// for(var i=0;i<Items.length;i++){
+//     Items[i].style.backgroundColor = 'skyblue';
+// }
+
+// GET ELEMENT BY TAG NAME
+
+var li = document.getElementsByTagName("li");
+console.log(li);
+console.log(li[2]);
+li[2].style.fontWeight = "bold";
+
+// changing one item background color
+li[3].style.backgroundColor = "skyblue";
+
+// changing all the items bckground color
+for (var i = 0; i < li.length; i++) {
+  li[i].style.backgroundColor = "skyblue";
 }
