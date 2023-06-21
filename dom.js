@@ -58,21 +58,70 @@
 
 // QUERY SELECTORS
 
-var header = document.querySelector("#main-header");
-header.style.borderBottom = "solid 4px #000";
+// var header = document.querySelector("#main-header");
+// header.style.borderBottom = "solid 4px #000";
 
-var input = document.querySelector("input");
-input.value = "Hello";
+// var input = document.querySelector("input");
+// input.value = "Hello";
 
-var submit = document.querySelector('input[type="submit"]');
-submit.value = "Send";
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value = "Send";
 
-var item = document.querySelector(".list-group-item");
-item.style.color = "red";
+// var item = document.querySelector(".list-group-item");
+// item.style.color = "red";
 
-var lastItem = document.querySelector(".list-group-item:last-child");
-lastItem.style.color = "blue";
+// var lastItem = document.querySelector(".list-group-item:last-child");
+// lastItem.style.color = "blue";
 
-var secondItem = document.querySelector(".list-group-item:nth-child(2)");
-secondItem.style.color = "green";
+// var secondItem = document.querySelector(".list-group-item:nth-child(2)");
+// secondItem.style.color = "green";
 
+//QUERY SELECTOR ALL
+
+// var titles = document.querySelectorAll(".title");
+// console.log(titles);
+
+// // titles[0].textContent = "Hellow";
+
+// var odd = document.querySelectorAll("li:nth-child(odd)");
+// for (var i = 0; i < odd.length; i++) {
+//   odd[i].style.backgroundColor = "skyblue";
+// }
+
+// var even = document.querySelectorAll("li:nth-child(even)");
+// for(var i=0;i<even.length;i++){
+//     even[i].style.backgroundColor = "pink";
+// }
+
+// TRAVERSING THE DOM
+// Parent Node
+// var ItemList = document.querySelector("#items");
+// console.log(ItemList.parentNode);
+// ItemList.parentNode.style.backgroundColor = "skyblue";
+
+// console.log(ItemList.parentNode.parentNode.parentNode);
+
+// parent Element
+// var ItemList = document.querySelector("#items");
+// ItemList.parentElement.style.backgroundColor = "pink";
+
+// CREATE ELEMENTS
+
+// Creating a new div
+
+var newDiv = document.createElement("div");
+
+// add class name
+newDiv.className = "Hello";
+
+// add id
+newDiv.id = "Hi";
+
+// add title/ add attr
+newDiv.setAttribute("Hey", "dev");
+
+// create a text node and add a text
+var newDivText = document.createTextNode("Hello DOM");
+
+newDiv.appendChild(newDivText);
+console.log(newDiv);
