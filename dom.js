@@ -109,19 +109,60 @@
 
 // Creating a new div
 
-var newDiv = document.createElement("div");
+// var newDiv = document.createElement("div");
 
 // add class name
-newDiv.className = "Hello";
+// newDiv.className = "Hello";
 
 // add id
-newDiv.id = "Hi";
+// newDiv.id = "Hi";
 
 // add title/ add attr
-newDiv.setAttribute("Hey", "dev");
+// newDiv.setAttribute("Hey", "dev");
 
 // create a text node and add a text
-var newDivText = document.createTextNode("Hello DOM");
+// var newDivText = document.createTextNode("Hello DOM");
 
-newDiv.appendChild(newDivText);
-console.log(newDiv);
+// newDiv.appendChild(newDivText);
+// console.log(newDiv);
+
+// CREATING A NEW ITEMS/DELETE BTN
+
+var Form = document.getElementById("addForm");
+var ItemList = document.getElementById("items");
+
+// form submit event
+Form.addEventListener("submit", additem);
+
+//Add item
+function additem(e) {
+  e.preventDefault();
+
+  // Get input value
+  var newItem = document.getElementById("item").value;
+
+  // create new li element
+  var li = document.createElement("li");
+
+  // add class
+  li.className = "list-group-item";
+
+  // add text node with input values
+  li.appendChild(document.createTextNode(newItem));
+
+
+  // create delete button
+  var deleteBtn = document.createElement('button');
+
+  // add class name
+  deleteBtn.className = 'btn btn-danger btn-sm fload-right delete'
+
+  // append text node
+  deleteBtn.appendChild(document.createTextNode('X'));
+
+  //append button to li
+  li.appendChild(deleteBtn);
+
+  // append li to list
+  ItemList.appendChild(li);
+}
