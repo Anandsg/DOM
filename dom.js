@@ -186,7 +186,7 @@ function removeItem(e) {
 
 // filter item
 function filterItems(e) {
-  // convert text to lowercase
+  // convert text to lowercases
   var text = e.target.value.toLowerCase();
 
   // get li's 
