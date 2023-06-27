@@ -169,7 +169,7 @@ function additem(e) {
   //append button to li
   li.appendChild(deleteBtn);
 
-  // append li to list
+  // append li to list 
   ItemList.appendChild(li);
 }
 
