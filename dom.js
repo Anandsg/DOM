@@ -166,12 +166,12 @@ function additem(e) {
   // append text node
   deleteBtn.appendChild(document.createTextNode("X"));
 
-  //append button to li
-  li.appendChild(deleteBtn);
-
   // append li to list 
   ItemList.appendChild(li);
 }
+
+  //append button to li
+  li.appendChild(deleteBtn);
 
 // remove item
 
