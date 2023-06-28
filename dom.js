@@ -170,7 +170,7 @@ function additem(e) {
   ItemList.appendChild(li);
 }
 
-  //append button to li
+  //append button to li 
   li.appendChild(deleteBtn);
 
 // remove item
