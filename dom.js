@@ -64,11 +64,11 @@
 // var input = document.querySelector("input");
 // input.value = "Hello";
 
-// var submit = document.querySelector('input[type="submit"]');
-// submit.value = "Send";
-
 // var item = document.querySelector(".list-group-item");
 // item.style.color = "red";
+
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value = "Send";
 
 // var lastItem = document.querySelector(".list-group-item:last-child");
 // lastItem.style.color = "blue";
